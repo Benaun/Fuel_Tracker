@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style/normalize.css">
+  <link rel="stylesheet" href="src/style/style.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <label for="car-select">Выберите авто:</label>
+      <select name="cars" id="cars-select">
+        <option value="">--Не выбрано--</option>
+        <option value="Vesta">Vesta</option>
+        <option value="Skoda">Skoda</option>
+        <option value="SkodaRest">SkodaRest</option>
+        <option value="KiaRio">KiaRio</option>
+        <option value="VestaCross">VestaCross</option>
+      </select>
+    </header>
+    <div class="calculations">
+      <section class="section">
+        <div class="car-section car-section--city">
+          <input type="text" class="city-input" name="city" maxlength="4" placeholder="0"
+            onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')">
+          <div class="buttons-block">
+            <button class="btn btn-add city-add">+</button>
+            <button class="btn btn-remove city-remove">-</button>
+          </div>
+          <div class="result-block">
+            <p class="city-value">Расход: <span>0</span> л/км</p>
+            <p class="city-result">Итого: <span>0</span> литров</p>
+            <p class="сity-kilometers">Итого: <span>0</span> километров</p>
+          </div>
+        </div>
+        <p class="distance city-distance"></p>
+      </section>
+
+      <section class="section">
+        <div class="car-section car-section--track">
+          <input type="text" class="track-input" name="track" maxlength="4" placeholder="0"
+            onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')">
+          <div class="buttons-block">
+            <button class="btn btn-add track-add">+</button>
+            <button class="btn btn-remove track-remove">-</button>
+          </div>
+          <div class="result-block">
+            <p class="track-value">Расход: <span>0</span> л/км</p>
+            <p class="track-result">Итого: <span>0</span> литров</p>
+            <p class="track-kilometers">Итого: <span>0</span> километров</p>
+          </div>
+        </div>
+        <p class="distance track-distance"></p>
+      </section>
+
+      <section class="section">
+        <div class="car-section car-section--otherCity">
+          <input type="text" class="otherCity-input" name="otherCity" maxlength="4" placeholder="0"
+            onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')">
+          <div class="buttons-block">
+            <button class="btn btn-add otherCity-add">+</button>
+            <button class="btn btn-remove otherCity-remove">-</button>
+          </div>
+          <div class="result-block">
+            <p class="otherCity-value">Расход: <span>0</span> л/км</p>
+            <p class="otherCity-result">Итого: <span>0</span> литров</p>
+            <p class="otherCity-kilometers">Итого: <span>0</span> километров</p>
+          </div>
+        </div>
+        <p class="distance otherCity-distance"></p>
+      </section>
+    </div>
+  </div>
+  <script type="module" src="src/js/main.js"></script>
+</body>
+
+</html>

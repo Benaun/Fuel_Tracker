@@ -1,0 +1,107 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+.container {
+  padding: 10px;
+  width: 370px;
+  margin: 0 auto;
+  background: #a89e9e;
+  border: 2px solid #222;
+  border-radius: 10px;
+}
+
+.calculations {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.header label {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+select {
+  padding: 7px 10px;
+  border-radius: 10px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+
+input {
+  margin-right: 10px;
+  padding: 5px 10px;
+  width: 70px;
+  border-radius: 10px;
+}
+
+.car-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttons-block {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.btn {
+  padding: 5px 10px;
+  align-items: center;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.result-block p {
+  font-weight: 600;
+}
+
+.result-block span {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(227, 230, 90);
+}
+
+.disabled {
+  cursor: none;
+  opacity: .5;
+}
+
+.btn-add {
+  background-color: rgb(123, 236, 123);
+}
+
+.btn-remove {
+  background-color: rgb(218, 71, 27);
+}
+
+.distance {
+  font-size: 12px;
+  font-weight: 400;
+  min-height: 14px;
+  margin-top: 5px;
+}
